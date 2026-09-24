@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Café Majalis · Liens</title>
+  <meta name="description" content="Café Majalis : commandez sur le site, écrivez-nous sur WhatsApp ou suivez-nous sur Instagram." />
+  <meta name="theme-color" content="#FBF5EC" />
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0&display=block" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #FBF5EC; --cream-2: #F3E8D8; --coffee: #2A140C; --gold: #7A5500;
+      --gold-soft: #FBE3B6; --muted: #6F6258; --line: #EADFCF;
+      --font: 'Century Gothic', CenturyGothic, 'Didact Gothic', AppleGothic, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: var(--font); color: var(--coffee); background: var(--cream);
+      display: flex; justify-content: center; -webkit-font-smoothing: antialiased;
+      padding: max(40px, env(safe-area-inset-top)) 20px max(32px, env(safe-area-inset-bottom));
+    }
+    .ms {
+      font-family: 'Material Symbols Rounded'; font-weight: normal; font-style: normal; font-size: 24px;
+      line-height: 1; display: inline-block; white-space: nowrap; font-feature-settings: 'liga';
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    main { width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+    .mark {
+      width: 88px; height: 88px; border-radius: 50%; background: var(--coffee); color: var(--gold-soft);
+      display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+      box-shadow: 0 0 0 6px var(--cream), 0 0 0 7px var(--line);
+      animation: in .6s cubic-bezier(.2,.8,.2,1) both;
+    }
+    .mark .ms { font-size: 42px; font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: .06em; animation: in .6s .08s both; }
+    .tagline { margin: 8px 0 0; color: var(--muted); font-size: 16px; line-height: 1.5; animation: in .6s .14s both; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; padding: 6px 12px; border-radius: 999px;
+      background: var(--gold-soft); color: var(--gold); font-size: 13px; font-weight: 700; animation: in .6s .18s both;
+    }
+    .badge .ms { font-size: 16px; }
+
+    .links { list-style: none; margin: 36px 0 0; padding: 0; width: 100%; display: flex; flex-direction: column; gap: 12px; }
+    .links li { animation: in .6s both; }
+    .links li:nth-child(1) { animation-delay: .22s; } .links li:nth-child(2) { animation-delay: .28s; } .links li:nth-child(3) { animation-delay: .34s; }
+    .link {
+      display: flex; align-items: center; gap: 14px; width: 100%; min-height: 72px; padding: 12px 18px 12px 12px;
+      border-radius: 999px; text-decoration: none; text-align: left; color: var(--coffee);
+      background: #fff; border: 1px solid var(--line);
+      box-shadow: 0 1px 2px rgba(42,20,12,.05), 0 10px 24px -16px rgba(42,20,12,.25);
+      transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .link:hover { box-shadow: 0 1px 2px rgba(42,20,12,.05), 0 14px 28px -14px rgba(42,20,12,.35); }
+    .link:active { transform: scale(.98); }
+    .link:focus-visible { outline: 2px solid #C8963E; outline-offset: 3px; }
+    .link__icon { width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--cream-2); color: var(--gold); }
+    .link__text { flex: 1; min-width: 0; }
+    .link__title { display: block; font-size: 17px; font-weight: 700; }
+    .link__sub { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; }
+    .link__arrow { color: var(--muted); }
+    .link--main { background: var(--coffee); color: #fff; border-color: var(--coffee); }
+    .link--main .link__icon { background: rgba(255,255,255,.12); color: var(--gold-soft); }
+    .link--main .link__sub, .link--main .link__arrow { color: #D9C9B6; }
+
+    footer { margin-top: 40px; font-size: 13px; color: var(--muted); animation: in .6s .4s both; }
+    @keyframes in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true"><span class="ms">local_cafe</span></div>
+    <h1>CAFÉ MAJALIS</h1>
+    <p class="tagline">Le café qui rassemble.<br />Torréfié et moulu au Sénégal.</p>
+    <span class="badge"><span class="ms">verified</span>Made in Senegal</span>
+
+    <ul class="links">
+      <li>
+        <a class="link link--main" id="linkSite" href="https://cheikh234.github.io/CafeMajalis/">
+          <span class="link__icon"><span class="ms">shopping_bag</span></span>
+          <span class="link__text"><span class="link__title">Commander sur le site</span><span class="link__sub">Sachets 500 g et événements</span></span>
+          <span class="ms link__arrow">chevron_right</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" id="linkWhatsapp" href="#" target="_blank" rel="noopener">
+          <span class="link__icon"><span class="ms">chat</span></span>
+          <span class="link__text"><span class="link__title">WhatsApp</span><span class="link__sub">77 661 66 19</span></span>
+          <span class="ms link__arrow">chevron_right</span>
+        </a>
+      </li>
+      <li>
+        <a class="link" id="linkInstagram" href="#" target="_blank" rel="noopener">
+          <span class="link__icon"><span class="ms">photo_camera</span></span>
+          <span class="link__text"><span class="link__title">Instagram</span><span class="link__sub" id="igHandle"></span></span>
+          <span class="ms link__arrow">chevron_right</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>© <span id="year">2026</span> Café Majalis · Dakar, Sénégal</footer>
+  </main>
+
+  <script>
+    /* ⚙️ RÉGLAGES : modifie seulement ces 3 lignes */
+    const CONFIG = {
+      site: 'https://cheikh234.github.io/CafeMajalis/',
+      whatsapp: '221776616619',                 // indicatif 221 + numéro, sans espace
+      instagram: 'cafemajalis',                 // ⚠️ remplace par ton vrai nom de compte Instagram (sans @)
+    };
+    const message = 'Bonjour Café Majalis, je souhaite commander du café.';
+
+    document.getElementById('linkSite').href = CONFIG.site;
+    document.getElementById('linkWhatsapp').href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(message);
+    document.getElementById('linkInstagram').href = 'https://www.instagram.com/' + CONFIG.instagram + '/';
+    document.getElementById('igHandle').textContent = '@' + CONFIG.instagram;
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
