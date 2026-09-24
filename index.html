@@ -682,7 +682,7 @@ input:focus, select:focus, textarea:focus { background: var(--white); border-col
           <ul class="summary__perks">
             <li><span class="ms">bolt</span>Livraison sous 24 h à Dakar</li>
             <li><span class="ms">lock</span>Paiement Wave, Orange Money ou espèces</li>
-            <li><span class="ms">support_agent</span>Suivi par WhatsApp au 77 661 66 19</li>
+            <li><span class="ms">support_agent</span>Suivi par WhatsApp au 75 509 09 83</li>
           </ul>
         </aside>
       </div>
@@ -811,8 +811,8 @@ input:focus, select:focus, textarea:focus { background: var(--white); border-col
     <div>
       <p class="footer__title">Contact</p>
       <ul class="footer__list">
-        <li><a href="tel:+221776616619"><span class="ms">call</span>77 661 66 19</a></li>
-        <li><a href="https://wa.me/221776616619" target="_blank" rel="noopener"><span class="ms">chat</span>WhatsApp : 77 661 66 19</a></li>
+        <li><a href="tel:+221755090983"><span class="ms">call</span>75 509 09 83</a></li>
+        <li><a href="https://wa.me/221755090983" target="_blank" rel="noopener"><span class="ms">chat</span>WhatsApp : 75 509 09 83</a></li>
         <li><span class="ms">location_on</span>Dakar, Sénégal</li>
       </ul>
     </div>
@@ -845,7 +845,7 @@ input:focus, select:focus, textarea:focus { background: var(--white); border-col
 </div>
 
 <!-- Bouton WhatsApp flottant -->
-<a class="wa-float" href="https://wa.me/221776616619" target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp">
+<a class="wa-float" href="https://wa.me/221755090983" target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.38 4 15a11.9 11.9 0 0 0 1.62 6L4 28l7.2-1.6A12.1 12.1 0 0 0 16.04 27C22.66 27 28 21.62 28 15S22.66 3 16.04 3Zm0 21.8c-1.8 0-3.55-.48-5.08-1.4l-.36-.22-4.27.95.98-4.14-.24-.38A9.7 9.7 0 0 1 6.2 15c0-5.4 4.42-9.8 9.84-9.8 5.4 0 9.8 4.4 9.8 9.8s-4.4 9.8-9.8 9.8Zm5.38-7.33c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.48-.5-.67-.5h-.57c-.2 0-.52.08-.79.37-.27.3-1.03 1-1.03 2.45s1.06 2.85 1.2 3.05c.15.2 2.08 3.17 5.03 4.45.7.3 1.25.48 1.68.62.7.22 1.35.19 1.86.11.57-.08 1.75-.71 2-1.4.25-.7.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35Z"/></svg>
 </a>
 
@@ -874,7 +874,7 @@ input:focus, select:focus, textarea:focus { background: var(--white); border-col
    prix, le numéro WhatsApp ou les zones de livraison.
    ========================================================= */
 const CONFIG = {
-  whatsapp: '221776616619',        // numéro WhatsApp (indicatif 221 + numéro, sans espaces ni +)
+  whatsapp: '221755090983',        // numéro WhatsApp (indicatif 221 + numéro, sans espaces ni +)
   prixSachet: 2500,                // prix d'un sachet de 500 g, en FCFA
   quantiteMax: 100,                // au-delà : passer par la demande événement
   zones: [                         // zones de livraison et frais (FCFA). null = à confirmer
@@ -1006,7 +1006,7 @@ $$('input, select').forEach((el) => el.addEventListener('input', () => {
   if (el.getAttribute('aria-invalid') === 'true') erreur(el, '');
 }));
 
-// Formate le numéro pendant la saisie : 77 661 66 19
+// Formate le numéro pendant la saisie : 75 509 09 83
 $$('input[type="tel"]').forEach((el) => el.addEventListener('input', () => {
   const d = el.value.replace(/\D/g, '').slice(0, 9);
   const parts = [d.slice(0, 2), d.slice(2, 5), d.slice(5, 7), d.slice(7, 9)].filter(Boolean);
